@@ -32,7 +32,6 @@ namespace move
             str = get_sring.GetStringBetween(downloadString, "<div class=\"tabcontents\">", "</div>");
            
 
-            //  Console.WriteLine(str);
 
            List<string> all = get_sring.List_file_move(str,"<li>","</li>");
 
