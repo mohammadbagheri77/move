@@ -43,8 +43,8 @@ namespace move
 
             downloadString = client.DownloadString("https://www.uptvs.com");
 
-        //    str = get_sring.GetStringBetween(downloadString, "<div class=\"tabcontents\">", "</div>");
-          str = get_sring.GetStringBetween(downloadString, "<div class=\"footer-left-side-second\">", "</div>");
+            str = get_sring.GetStringBetween(downloadString, "<div class=\"tabcontents\">", "</div>");
+         // str = get_sring.GetStringBetween(downloadString, "<div class=\"footer-left-side-second\">", "</div>");
            
             List<string> all = get_sring.List_file_move(str,"<li>","</li>");
 
@@ -60,7 +60,7 @@ namespace move
           
            for (int i=0; i <list_move.Count; i++)
             {
-                Console.WriteLine($"{list_move[i].move_link} \n {list_move[i].move_name } \n {list_move[i].move_token }");
+                Console.WriteLine($"{list_move[i].move_link} \n {list_move[i].move_name } \n {list_move[i].move_token }\n===================================================");
             }
 
             int iii = SaveCash(list_move);
